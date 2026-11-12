@@ -1,12 +1,40 @@
+// function fibonacci(n) {
+//     let a = 0, b = 1;
+//     console.log(a);
+//     console.log(b);
+//     for (let i = 2; i < n; i++) {
+//         let next = a + b;
+//         console.log(next);
+//         a = b;
+//         b = next;
+//     }
+// }
+// fibonacci(7); // 0 1 1 2 3 5 8
+
+
+
+
 function fibonacci(n) {
-    let a = 0, b = 1;
-    console.log(a);
-    console.log(b);
-    for (let i = 2; i < n; i++) {
-        let next = a + b;
-        console.log(next);
-        a = b;
-        b = next;
-    }
+  let a = 0;
+  let b = 1;
+
+  for (let i = 2; i <= n; i++) {
+    let temp = a + b;
+    a = b;
+    b = temp;
+  }
+
+  console.log(b); // only final number
 }
-fibonacci(7); // 0 1 1 2 3 5 8
+
+fibonacci(5); // Output: 5
+
+
+
+
+
+
+
+
+
+fibonacci(5)
